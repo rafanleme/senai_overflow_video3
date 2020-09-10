@@ -1,0 +1,307 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+
+  overflow: hidden;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+
+  background-color: var(--secondary);
+
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+}
+
+.header div {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header input {
+  width: 95%;
+  height: 50px;
+  margin: 5px auto;
+}
+
+.header p {
+  color: var(--red);
+  font-size: 25px;
+  letter-spacing: 5px;
+
+  text-align: center;
+  align-self: center;
+
+  text-shadow: 0px 0px 3px var(--white), 0px 0px 5px var(--white);
+
+  cursor: default;
+  transition: 0.8s;
+}
+
+.header .btnSair {
+  margin-right: 10px;
+  align-self: flex-end;
+}
+
+.content {
+  width: 100%;
+  margin-top: 60px;
+
+  background-color: var(--primary);
+
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  margin-top: 10px;
+
+  color: var(--white);
+  font-size: 20px;
+}
+
+.profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+
+.profile label {
+  margin-top: 5px;
+  font-size: 15px;
+  text-decoration: none;
+  color: var(--gray);
+
+  letter-spacing: 0;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.profile label:hover {
+  color: var(--red);
+}
+
+.profile strong {
+  margin-top: 25px;
+  font-weight: 500;
+}
+
+.profile p {
+  font-size: 25px;
+}
+
+.feed {
+  width: 100%;
+  height: calc(100vh - 70px);
+  margin-top: 10px;
+
+  display: flex;
+  flex-direction: column;
+
+  overflow-y: auto;
+}
+::-webkit-scrollbar-track {
+  background-color: #f4f4f4;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  background: #f4f4f4;
+}
+::-webkit-scrollbar-thumb {
+  background: #dad7d7;
+}
+
+.card-post {
+  width: 70%;
+  border-radius: 6px;
+  height: fit-content;
+  padding: 10px;
+  margin: 20px auto;
+
+  color: var(--white);
+  background-color: var(--secondary);
+}
+
+.card-post header {
+  display: flex;
+  align-items: center;
+}
+
+.card-post header img {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+}
+
+.card-post header strong {
+  margin-left: 10px;
+
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.card-post header p {
+  margin-left: 5px;
+
+  color: var(--gray);
+  font-size: 14px;
+}
+
+.card-post header .icon {
+  margin-left: 10px;
+}
+
+.card-post section {
+  margin-top: 10px;
+
+  background-color: var(--secondary);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.card-post section strong {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.card-post section p {
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+.card-post section img {
+  margin-top: 10px;
+  max-height: 100%;
+
+  align-self: center;
+}
+
+.card-post footer {
+  margin-top: 10px;
+}
+
+.card-post footer p {
+  margin-top: 5px;
+}
+
+.card-post footer h1 {
+  font-size: 16px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.card-post footer h1:hover {
+  color: var(--red);
+}
+
+.card-post footer section header p {
+  margin-top: 0;
+}
+
+.card-post footer section {
+  margin-top: 5px;
+  padding: 10px;
+
+  background-color: var(--primary);
+  border-radius: 6px;
+}
+
+.card-post footer section p {
+  margin-top: 10px;
+  margin-left: 10px;
+
+  font-size: 14px;
+}
+
+.card-post footer .novo-comentario {
+  width: 100%;
+  margin-top: 5px;
+
+  display: flex;
+}
+
+.card-post footer .novo-comentario textarea {
+  flex: 1;
+  height: 30px;
+}
+
+.nova-postagem {
+  width: 600px;
+  height: fit-content;
+  padding: 10px;
+
+  position: relative;
+
+  background-color: var(--primary);
+  border-radius: 6px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.nova-postagem h1 {
+  color: var(--white);
+  font-weight: 500;
+  text-align: center;
+}
+
+.nova-postagem label {
+  margin-top: 10px;
+}
+
+.nova-postagem label em {
+  font-size: 14px;
+  font-style: normal;
+}
+
+.nova-postagem textarea {
+  height: 100px;
+}
+
+.nova-postagem input[type="file"] {
+  display: none;
+}
+
+.nova-postagem span {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: 10px;
+
+  font-size: 30px;
+  color: var(--white);
+
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.nova-postagem span:hover {
+  color: var(--red);
+}
+
+.actions {
+  padding-top: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
